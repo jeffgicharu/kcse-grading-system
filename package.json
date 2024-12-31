@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js", 
+    "dev": "nodemon server.js", 
+    "build": "npm install" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "KCSE Grading System API for student results and performance analysis",
   "dependencies": {
     "axios": "^1.7.9",
     "body-parser": "^1.20.3",
@@ -16,5 +18,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22" 
   }
 }
